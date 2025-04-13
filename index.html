@@ -1,5 +1,5 @@
-ario<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -8,27 +8,41 @@ ario<!DOCTYPE html>
     <!-- Primary Meta Tags -->
     <meta name="title" content="Crediario-Jane">
     <meta name="description" content="Tudo Parcelado💄">
-
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="crediario.starktech.net.br/">
-    <meta property="og:title" content="Controle-Financeiro">
-    <meta property="og:description" content="Tudo Parcelado💄">
+    <meta property="og:url" content="https://crediario.starktech.net.br/">
+    <meta property="og:title" content="Parcelados-JANE">
+    <meta property="og:description" content="💳 Compre agora, pague do seu jeito!
+Descubra um novo jeito de comprar com o nosso app!
+Aqui você encontra as melhores marcas e pode parcelar suas compras com facilidade, segurança e condições que cabem no seu bolso.
+
+✅ Várias lojas em um só lugar
+✅ Parcelamento flexível
+✅ Sem burocracia
+✅ Tudo 100% digital
+
+Baixe agora e tenha o controle das suas compras na palma da mão!.">
     <meta property="og:image" content="https://i.ibb.co/nqY0TNjD/Senhor-n-o-sei-o-que-tu-preparaste-para-mim-mais-estou-pronta.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
+    
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="crediario.starktech.net.br">
-    <meta name="twitter:title" content="Controle-Financeiro ">
-    <meta name="twitter:description" content="tudo parcelado💄">
+    <meta name="twitter:url" content="https://crediario.starktech.net.br/">
+    <meta name="twitter:title" content="Crediario-Jane">
+    <meta name="twitter:description" content="Organize suas finanças com facilidade e alcance de seus objetivos com controle e inteligência.">
     <meta name="twitter:image" content="https://i.ibb.co/nqY0TNjD/Senhor-n-o-sei-o-que-tu-preparaste-para-mim-mais-estou-pronta.jpg">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
     <style>
         body, html {
             margin: 0;
@@ -38,7 +52,6 @@ ario<!DOCTYPE html>
             overflow: hidden;
             position: fixed;
         }
-
         .frame-container {
             width: 100%;
             height: 100%;
@@ -48,7 +61,6 @@ ario<!DOCTYPE html>
             right: 0;
             bottom: 0;
         }
-
         iframe {
             width: 100%;
             height: 100%;
@@ -61,14 +73,21 @@ ario<!DOCTYPE html>
 </head>
 <body>
     <div class="frame-container">
-   <iframe 
-    src="https://script.google.com/macros/s/AKfycbxWb0AKnk46BSlr50mujPyEHTl5cDLEWT_FCq13ovj4NXOzvpGwlbsxFDVYqCdD4sYB/exec"
-    allow="autoplay; camera; microphone; fullscreen"
-    allowfullscreen
-    loading="eager"
-    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-downloads allow-top-navigation"
-    onerror="this.src='error.html'">
-</iframe>
-</div>
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycbxWb0AKnk46BSlr50mujPyEHTl5cDLEWT_FCq13ovj4NXOzvpGwlbsxFDVYqCdD4sYB/exec"
+            allow="autoplay; camera; microphone; fullscreen"
+            allowfullscreen
+            loading="eager"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-downloads allow-top-navigation">
+        </iframe>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+    </script>
 </body>
 </html>
