@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>CRED-Jane</title>
-    <!-- Meta tags com emoji para identificação de gênero -->
-    <meta name="title" content="JANE💄">
-    <meta name="description" content="Gerencie suas compras e parcelas de forma simples e eficiente">
+    <title>Carteira FIIS - Gestão de Investimentos</title>
+    <!-- Meta tags -->
+    <meta name="title" content="Carteira FIIS 📊">
+    <meta name="description" content="Gerencie seus investimentos em Fundos Imobiliários de forma inteligente">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://crediario.starktech.net.br/">
-    <meta property="og:title" content="JANE💄">
-    <meta property="og:description" content="Gerencie suas compras e parcelas de forma simples e eficiente">
+    <meta property="og:url" content="https://carteira-fiis.starktech.net.br/">
+    <meta property="og:title" content="Carteira FIIS 📊">
+    <meta property="og:description" content="Gerencie seus investimentos em Fundos Imobiliários de forma inteligente">
     <meta property="og:image" content="https://i.ibb.co/kj8jVkq/Logotipo-Faustino-Representa-es-e-Vendas-Moderno-Preto-Branco-2.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://crediario.starktech.net.br/">
-    <meta name="twitter:title" content="JANE💄">
-    <meta name="twitter:description" content="Gerencie suas compras e parcelas de forma simples e eficiente">
+    <meta name="twitter:url" content="https://carteira-fiis.starktech.net.br/">
+    <meta name="twitter:title" content="Carteira FIIS 📊">
+    <meta name="twitter:description" content="Gerencie seus investimentos em Fundos Imobiliários de forma inteligente">
     <meta name="twitter:image" content="https://i.ibb.co/kj8jVkq/Logotipo-Faustino-Representa-es-e-Vendas-Moderno-Preto-Branco-2.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -42,23 +42,21 @@
             position: relative;
         }
         
-        /* Banner vertical feminino que ocupa toda a tela */
+        /* Banner vertical financeiro que ocupa toda a tela */
         #vertical-banner {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #6b2d5c 0%, #8e3a75 50%, #b44b8f 100%);
+            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
             background-image: 
-                radial-gradient(circle at 20% 80%, rgba(255, 182, 193, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                url('https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_50/v1/banner/2025_05_22_15_59_47_3/ee7e3a2b-e999-4499-8036-a58ec6783942-diadoamor-kitscombos-cards-25c08-750x1136-00.png');
-            background-size: cover, cover, contain;
-            background-position: center, center, center;
-            background-repeat: no-repeat, no-repeat, no-repeat;
-            background-blend-mode: overlay;
-            z-index: 9999; /* Aumentado para ficar acima de tudo */
+                radial-gradient(circle at 20% 80%, rgba(26, 35, 126, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            background-size: cover, cover;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+            z-index: 9999;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -71,7 +69,7 @@
 		
         /* Estilo para o botão de começar */
         .start-button {
-            background: linear-gradient(45deg, #d81b60, #f06292);
+            background: linear-gradient(45deg, #1565c0, #1976d2);
             color: white;
             border: none;
             padding: 18px 40px;
@@ -79,39 +77,39 @@
             cursor: pointer;
             font-size: 20px;
             font-weight: 700;
-            box-shadow: 0 8px 25px rgba(216, 27, 96, 0.5);
+            box-shadow: 0 8px 25px rgba(21, 101, 192, 0.5);
             transition: all 0.3s ease;
             z-index: 10000;
             position: relative;
             margin-top: 20px;
         }
 
-            .start-button:hover {
+        .start-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(216, 27, 96, 0.7);
+            box-shadow: 0 12px 30px rgba(21, 101, 192, 0.7);
         }
 
-          /* Ajuste o estilo do container do conteúdo do banner */
+        /* Ajuste o estilo do container do conteúdo do banner */
         #banner-content-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #6b2d5c 0%, #8e3a75 50%, #b44b8f 100%);
+            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
             background-image: 
-                radial-gradient(circle at 20% 80%, rgba(255, 182, 193, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(26, 35, 126, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
             background-size: cover;
             background-position: center;
             z-index: 9998;
-            display: none; /* Inicialmente escondido */
+            display: none;
             justify-content: center;
             align-items: center;
             transition: opacity 0.5s ease;
         }
 
-          /* Ajuste o estilo do conteúdo do banner */
+        /* Ajuste o estilo do conteúdo do banner */
         #banner-content {
             max-width: 90%;
             width: 500px;
@@ -123,21 +121,20 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             transform: translateY(20px);
             transition: transform 0.5s ease;
-            text-align: center; /* Centralizar todo o texto */
+            text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centralizar elementos horizontalmente */
-            justify-content: center; /* Centralizar elementos verticalmente */
+            align-items: center;
+            justify-content: center;
         }
 
-
         #banner-content-container.active {
-         opacity: 1;
-          visibility: visible;
+            opacity: 1;
+            visibility: visible;
         }
 
         #banner-content-container.active #banner-content {
-         transform: translateY(0);
+            transform: translateY(0);
         }
 
         /* Efeito de partículas animadas */
@@ -163,7 +160,6 @@
             100% { transform: translateY(-100px); }
         }
 
-        
         #banner-logo {
             width: 120px;
             height: auto;
@@ -180,7 +176,7 @@
             font-size: 32px;
             font-weight: 900;
             margin-bottom: 15px;
-            background: linear-gradient(45deg, #ffffff, #f48fb1, #f06292);
+            background: linear-gradient(45deg, #ffffff, #64b5f6, #42a5f5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -204,8 +200,8 @@
             margin-right: auto;
         }
         
-         #banner-button {
-            background: linear-gradient(45deg, #d81b60, #f06292, #f8bbd0);
+        #banner-button {
+            background: linear-gradient(45deg, #1565c0, #1976d2, #42a5f5);
             color: white;
             border: none;
             padding: 16px 40px;
@@ -214,7 +210,7 @@
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(216, 27, 96, 0.4);
+            box-shadow: 0 8px 25px rgba(21, 101, 192, 0.4);
             text-transform: uppercase;
             letter-spacing: 1px;
             position: relative;
@@ -235,15 +231,16 @@
             left: 100%;
         }
         
-         #banner-button:hover {
+        #banner-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(216, 27, 96, 0.6);
-            background: linear-gradient(45deg, #c2185b, #d81b60, #f06292);
+            box-shadow: 0 12px 35px rgba(21, 101, 192, 0.6);
+            background: linear-gradient(45deg, #0d47a1, #1565c0, #1976d2);
         }
         #banner-button:active {
             transform: translateY(-1px);
         }
-        /* Indicadores visuais masculinos */
+
+        /* Elementos tecnológicos/financeiros */
         .tech-elements {
             position: absolute;
             width: 100%;
@@ -253,7 +250,7 @@
         }
         .tech-line {
             position: absolute;
-            background: linear-gradient(90deg, transparent, rgba(240, 98, 146, 0.5), transparent);
+            background: linear-gradient(90deg, transparent, rgba(66, 165, 245, 0.5), transparent);
             height: 1px;
             width: 100%;
             animation: techScan 4s linear infinite;
@@ -266,10 +263,11 @@
             50% { opacity: 1; }
             100% { transform: translateX(100%); opacity: 0; }
         }
-         /* Ícones decorativos */
+
+        /* Ícones decorativos */
         .icon-decoration {
             position: absolute;
-            color: rgba(240, 98, 146, 0.3);
+            color: rgba(66, 165, 245, 0.3);
             font-size: 24px;
             animation: iconFloat 6s ease-in-out infinite;
         }
@@ -282,14 +280,14 @@
             50% { transform: translateY(-20px) rotate(180deg); opacity: 0.7; }
         }
         
-        /* Tela de carregamento com cumprimentos */
+        /* Tela de carregamento */
         #loading-screen {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #6b2d5c 0%, #8e3a75 50%, #b44b8f 100%);
+            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -318,12 +316,12 @@
             font-size: 22px;
             margin-bottom: 30px;
             font-weight: 500;
-            color: #f06292;
+            color: #42a5f5;
         }
         
         .loading-spinner {
             border: 4px solid rgba(255, 255, 255, 0.1);
-            border-top: 4px solid #f06292;
+            border-top: 4px solid #42a5f5;
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -360,11 +358,11 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background: linear-gradient(45deg, #d81b60, #f06292);
+            background: linear-gradient(45deg, #1565c0, #1976d2);
             color: white;
             padding: 12px 24px;
             border-radius: 25px;
-            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.4);
+            box-shadow: 0 4px 15px rgba(21, 101, 192, 0.4);
             z-index: 1000;
             display: none;
             cursor: pointer;
@@ -385,7 +383,7 @@
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-                       text-align: center;
+            text-align: center;
             z-index: 2000;
             display: none;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -421,7 +419,7 @@
         }
         
         .modal-content {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -455,8 +453,8 @@
         }
         #user-name-input:focus {
             outline: none;
-            border-color: #f06292;
-            box-shadow: 0 0 15px rgba(240, 98, 146, 0.3);
+            border-color: #42a5f5;
+            box-shadow: 0 0 15px rgba(66, 165, 245, 0.3);
         }
         
         /* Seleção de gênero */
@@ -480,19 +478,9 @@
         }
         
         .gender-option.selected {
-            border-color: #f06292;
-            background: rgba(240, 98, 146, 0.2);
-            box-shadow: 0 0 15px rgba(240, 98, 146, 0.3);
-        }
-        
-        .gender-option:last-child.selected {
-            border-color: #ff69b4;
-            background: rgba(255, 105, 180, 0.2);
-        }
-        
-        .gender-option:last-child.selected {
-            border-color: #ff69b4;
-            background: rgba(255, 105, 180, 0.2);
+            border-color: #42a5f5;
+            background: rgba(66, 165, 245, 0.2);
+            box-shadow: 0 0 15px rgba(66, 165, 245, 0.3);
         }
         
         #save-name-button {
@@ -634,6 +622,7 @@
             font-weight: 500;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         /* Responsividade para telas menores */
         @media (max-width: 480px) {
             #banner-title {
@@ -657,38 +646,38 @@
 </head>
 <body>
     <div id="app-container">
-        <!-- Banner vertical masculino que ocupa toda a tela -->
+        <!-- Banner vertical financeiro que ocupa toda a tela -->
         <div id="vertical-banner">
-    <!-- Elementos tecnológicos decorativos -->
-    <div class="tech-elements">
-        <div class="tech-line"></div>
-        <div class="tech-line"></div>
-        <div class="tech-line"></div>
-    </div>
-    
-    <!-- Ícones decorativos -->
-    <div class="icon-decoration">💬</div>
-    <div class="icon-decoration">💖</div>
-    <div class="icon-decoration">🌟</div>
-    <div class="icon-decoration">✨</div>
-    
-    <!-- Botão inicial para começar -->
-    <button id="start-button" class="start-button">Começar</button>
-</div>
-
-<!-- Adicione este novo div para o conteúdo que aparecerá após clicar em "Começar" -->
-<div id="banner-content-container">
-    <div id="banner-content">
-        <img id="banner-logo" src="https://i.ibb.co/kj8jVkq/Logotipo-Faustino-Representa-es-e-Vendas-Moderno-Preto-Branco-2.png" alt="Logo">
-        <div id="banner-title">CRED-StarkTech</div>
-        <div id="banner-subtitle">Sistema de Gestão Financeira</div>
-        <div id="banner-description">
-            Controle total das suas finanças com tecnologia avançada. 
-            Gerencie compras, parcelas e orçamentos de forma profissional.
+            <!-- Elementos tecnológicos decorativos -->
+            <div class="tech-elements">
+                <div class="tech-line"></div>
+                <div class="tech-line"></div>
+                <div class="tech-line"></div>
+            </div>
+            
+            <!-- Ícones decorativos financeiros -->
+            <div class="icon-decoration">📊</div>
+            <div class="icon-decoration">💰</div>
+            <div class="icon-decoration">📈</div>
+            <div class="icon-decoration">🏢</div>
+            
+            <!-- Botão inicial para começar -->
+            <button id="start-button" class="start-button">Começar</button>
         </div>
-        <button id="banner-button">🚀 Acessar Sistema</button>
-    </div>
-</div>
+
+        <!-- Container com conteúdo do banner -->
+        <div id="banner-content-container">
+            <div id="banner-content">
+                <img id="banner-logo" src="https://i.ibb.co/kj8jVkq/Logotipo-Faustino-Representa-es-e-Vendas-Moderno-Preto-Branco-2.png" alt="Logo">
+                <div id="banner-title">Carteira FIIS</div>
+                <div id="banner-subtitle">Gestão Inteligente de Investimentos</div>
+                <div id="banner-description">
+                    Acompanhe seus Fundos Imobiliários, analise dividendos e maximize seus rendimentos com tecnologia de ponta.
+                </div>
+                <button id="banner-button">📊 Acessar Carteira</button>
+            </div>
+        </div>
+
         <!-- Botão de atualização -->
         <button id="refresh-button" title="Atualizar aplicativo">
             <div class="refresh-progress"></div>
@@ -700,11 +689,11 @@
             </svg>
         </button>
         
-        <!-- Frame do aplicativo (colocado primeiro para pré-carregar) -->
+        <!-- Frame do aplicativo -->
         <div class="frame-container" id="frame-container">
             <iframe
                 id="app-frame"
-                src= "https://script.google.com/macros/s/AKfycbzBmPsLO3Uu8m5VB3zgqYb0-vzX-_IZ1Tzl6-zzkX27RE9_HXInXanlZGpA7KXbB2Sy/exec?usp=sharing"
+                src="SUA_URL_DO_IFRAME_CARTEIRA_FIIS_AQUI"
                 allow="autoplay; camera; microphone; fullscreen"
                 allowfullscreen
                 loading="eager"
@@ -712,7 +701,7 @@
             </iframe>
         </div>
         
-        <!-- Tela de carregamento com cumprimentos (colocada por cima) -->
+        <!-- Tela de carregamento -->
         <div id="loading-screen">
             <div class="loading-container">
                 <div class="logo-container">
@@ -755,11 +744,12 @@
         <!-- Botão de instalação -->
         <button id="install-button">📱 Adicionar à tela inicial</button>
     </div>
+
     <script>
-        // Adicione uma variável de versão no topo do seu script
-        const APP_VERSION = '1.0.7'; // Incremente este valor quando fizer alterações no seu GAS
+        // Versão do aplicativo
+        const APP_VERSION = '1.0.0';
         
-                // Elementos principais
+        // Elementos principais
         const loadingScreen = document.getElementById('loading-screen');
         const frameContainer = document.getElementById('frame-container');
         const appFrame = document.getElementById('app-frame');
@@ -815,44 +805,36 @@
         function toggleLogos() {
             const logos = document.querySelectorAll('.logo');
             
-            // Remover classe active de todas as logos
             logos.forEach(logo => {
                 logo.classList.remove('active', 'pulse');
             });
             
-            // Adicionar classe active à logo atual
             const activeLogo = document.querySelector(`.logo-${currentLogo}`);
             activeLogo.classList.add('active');
             
-            // Adicionar animação de pulsar após um pequeno delay
             setTimeout(() => {
                 activeLogo.classList.add('pulse');
             }, 100);
             
-            // Incrementar para a próxima logo
             currentLogo = currentLogo % totalLogos + 1;
         }
         
         // Iniciar alternância de logos
         function startLogoRotation() {
-            // Limpar intervalo anterior se existir
             if (logoInterval) clearInterval(logoInterval);
-            
-            // Definir intervalo para alternar logos
             logoInterval = setInterval(toggleLogos, 5000);
         }
         
         // Função para gerar saudação baseada na hora do dia
         function getGreeting() {
             const hour = new Date().getHours();
-            const isFemale = userGender === 'female';
             
             if (hour >= 5 && hour < 12) {
-                return isFemale ? "Bom dia!" : "Bom dia!";
+                return "Bom dia!";
             } else if (hour >= 12 && hour < 18) {
-                return isFemale ? "Boa tarde!" : "Boa tarde!";
+                return "Boa tarde!";
             } else {
-                return isFemale ? "Boa noite!" : "Boa noite!";
+                return "Boa noite!";
             }
         }
         
@@ -873,7 +855,6 @@
             nameModal.style.display = 'flex';
             userNameInput.focus();
             
-            // Definir gênero selecionado
             if (userGender === 'female') {
                 maleOption.classList.remove('selected');
                 femaleOption.classList.add('selected');
@@ -906,10 +887,9 @@
             updateGreeting();
             startLogoRotation();
             
-            // Definir um tempo máximo para o carregamento
             loadingTimeout = setTimeout(() => {
                 hideLoadingScreen();
-            }, 10000); // 10 segundos
+            }, 10000);
         }
         
         // Função para esconder a tela de carregamento
@@ -922,7 +902,6 @@
             
             clearTimeout(loadingTimeout);
             
-            // Verificar se é a primeira visita
             if (isFirstVisit) {
                 showNameModal();
                 isFirstVisit = false;
@@ -931,37 +910,28 @@
         
         // Função para mostrar o banner
         function showBanner() {
-    // Mostrar o banner vertical principal
-    verticalBanner.style.display = 'flex';
-    verticalBanner.style.opacity = '1';
-    
-    // Esconder o conteúdo do banner
-    bannerContentContainer.classList.remove('active');
-    bannerContentContainer.style.display = 'none';
-    
-    // Esconder o frame do aplicativo
-    frameContainer.style.display = 'none';
-    
-    // Restaurar o botão de começar
-    startButton.style.display = 'block';
-    startButton.style.opacity = '1';
-}
+            verticalBanner.style.display = 'flex';
+            verticalBanner.style.opacity = '1';
+            bannerContentContainer.classList.remove('active');
+            bannerContentContainer.style.display = 'none';
+            frameContainer.style.display = 'none';
+            startButton.style.display = 'block';
+            startButton.style.opacity = '1';
+        }
         
         // Função para esconder o banner e mostrar o app
         function hideBanner() {
-    verticalBanner.style.opacity = '0';
-    bannerContentContainer.style.opacity = '0';
-    
-    setTimeout(() => {
-        verticalBanner.style.display = 'none';
-        bannerContentContainer.style.display = 'none';
-        frameContainer.style.display = 'block';
-        
-        // Resetar opacidade para futuras exibições
-        verticalBanner.style.opacity = '1';
-        bannerContentContainer.style.opacity = '1';
-    }, 500);
-}
+            verticalBanner.style.opacity = '0';
+            bannerContentContainer.style.opacity = '0';
+            
+            setTimeout(() => {
+                verticalBanner.style.display = 'none';
+                bannerContentContainer.style.display = 'none';
+                frameContainer.style.display = 'block';
+                verticalBanner.style.opacity = '1';
+                bannerContentContainer.style.opacity = '1';
+            }, 500);
+        }
         
         // Função para verificar o status online/offline
         function checkOnlineStatus() {
@@ -971,7 +941,6 @@
                     offlineMessage.style.display = 'none';
                     showToast('🌐 Você está online novamente!');
                     
-                    // Recarregar o iframe se estava offline
                     if (isFrameLoaded) {
                         refreshApp();
                     }
@@ -986,19 +955,14 @@
         // Função para atualizar o aplicativo
         function refreshApp() {
             showLoadingScreen();
-            
-            // Adicionar classe de animação ao botão
             refreshButton.classList.add('refreshing');
             
-            // Atualizar o iframe com um timestamp para evitar cache
             const timestamp = new Date().getTime();
             const currentSrc = appFrame.src.split('?')[0];
             appFrame.src = `${currentSrc}?v=${APP_VERSION}&t=${timestamp}`;
             
-            // Mostrar toast
             showToast('🔄 Atualizando aplicativo...');
             
-            // Remover classe após 2 segundos
             setTimeout(() => {
                 refreshButton.classList.remove('refreshing');
             }, 2000);
@@ -1006,29 +970,23 @@
         
         // Event Listeners
         document.addEventListener('DOMContentLoaded', () => {
-            // Verificar status online
             checkOnlineStatus();
-            
-            // Mostrar banner inicialmente
             showBanner();
-            
-            // Iniciar carregamento do app em segundo plano
             showLoadingScreen();
-          });
-             // Modifique o event listener do botão de começar
-startButton.addEventListener('click', () => {
-    // Esconder o banner vertical principal
-    verticalBanner.style.opacity = '0';
-    setTimeout(() => {
-        verticalBanner.style.display = 'none';
+        });
         
-        // Mostrar o conteúdo do banner
-        bannerContentContainer.style.display = 'flex';
-        setTimeout(() => {
-            bannerContentContainer.classList.add('active');
-        }, 50);
-    }, 500);
-});
+        // Botão de começar
+        startButton.addEventListener('click', () => {
+            verticalBanner.style.opacity = '0';
+            setTimeout(() => {
+                verticalBanner.style.display = 'none';
+                bannerContentContainer.style.display = 'flex';
+                setTimeout(() => {
+                    bannerContentContainer.classList.add('active');
+                }, 50);
+            }, 500);
+        });
+        
         // Evento para quando o iframe terminar de carregar
         appFrame.addEventListener('load', () => {
             isFrameLoaded = true;
@@ -1070,68 +1028,34 @@ startButton.addEventListener('click', () => {
         
         // Evento para o botão de instalação
         window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevenir o prompt automático
             e.preventDefault();
-            // Salvar o evento para usar depois
             deferredPrompt = e;
-            // Mostrar o botão de instalação
             installButton.style.display = 'block';
         });
         
         installButton.addEventListener('click', async () => {
             if (!deferredPrompt) return;
             
-            // Mostrar o prompt de instalação
             deferredPrompt.prompt();
-            
-            // Esperar pela escolha do usuário
             const { outcome } = await deferredPrompt.userChoice;
-            
-            // Limpar o prompt salvo
             deferredPrompt = null;
-            
-            // Esconder o botão após a escolha
             installButton.style.display = 'none';
             
-            // Mostrar feedback
             if (outcome === 'accepted') {
                 showToast('🎉 Obrigado por instalar nosso aplicativo!');
             }
         });
         
-        // Verificar se o app já está instalado
         window.addEventListener('appinstalled', () => {
             installButton.style.display = 'none';
             deferredPrompt = null;
             showToast('🎉 Aplicativo instalado com sucesso!');
         });
         
-        // Verificar se está sendo executado como PWA
         if (window.matchMedia('(display-mode: standalone)').matches || 
             window.navigator.standalone === true) {
             installButton.style.display = 'none';
         }
-        
-        // Verificar atualizações periodicamente (a cada 30 minutos)
-        setInterval(() => {
-            if (navigator.onLine) {
-                // Verificar se há atualizações disponíveis
-                fetch(`check-updates.php?v=${APP_VERSION}`, { 
-                    cache: 'no-store',
-                    headers: { 'Cache-Control': 'no-cache' }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.updateAvailable) {
-                        showToast('🔄 Nova versão disponível! Atualizando...', 3000);
-                        setTimeout(refreshApp, 3000);
-                    }
-                })
-                .catch(() => {
-                    // Silenciosamente falhar se não conseguir verificar atualizações
-                });
-            }
-        }, 30 * 60 * 1000);
     </script>
 </body>
 </html>
